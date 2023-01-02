@@ -4,7 +4,9 @@
   "description": "project_yailwindCss-init",
   "main": "index.js",
   "scripts": {
-    "build:css": "postcss ./src/tailwind.css -o ./public/css/main.css"
+    "build:css": "postcss ./src/tailwind.css -o ./public/css/main.css",
+    "dev": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/css/main.css --watch",
+    "prod": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/css/main.css --minify"
   },
   "repository": {
     "type": "git",
