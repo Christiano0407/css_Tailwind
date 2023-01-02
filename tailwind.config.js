@@ -3,7 +3,7 @@ const colors = require('tailwindcss/colors');
 
 module.exports = {
   purge: ['./public/index.html', './src/**/*.{html,js,jsx,ts,tsx}'],
-  darkMode: false,
+  darkMode: ['class', '[data-mode="dark"]'],
   theme: {
     extend: {},
     colors: {
@@ -16,8 +16,8 @@ module.exports = {
         dark: '#009eeb',
       },
     },
-    screen: {
-      sm: '640px',
+    screens: {
+      sm: '320px',
       // => @media (min-width: 640px) { ... }
       md: '768px',
       // => @media (min-width: 768px) { ... }

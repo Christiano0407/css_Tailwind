@@ -10,10 +10,23 @@
       Component
     </title>
   </head>
-  <body>
-    <main>
-      <h1 class="text-lg font-bold">Hello World</h1>
-      <h2 class="font-normal uppercase">My new system with CSS...</h2>
+  <body class="max-w-full flex justify-center">
+    <main class="max-w-screen-md sm:px-2 grid grid-cols-2 grid-rows-2 gap-2.5">
+      <div
+        class="col-span-full h-64 flex justify-between items-center bg-blue-light"
+      >
+        <h1 class="text-lg font-bold">Hello World</h1>
+        <h2 class="font-normal uppercase">My new system with CSS...</h2>
+      </div>
+      <div class="w-auto h-64">
+        <figure>
+          <img
+            class="bg-cover bg-no-repeat bg-center"
+            src="../src/img/img2.jpg"
+            alt="img"
+          />
+        </figure>
+      </div>
     </main>
 
     <!-- Javascript -->
