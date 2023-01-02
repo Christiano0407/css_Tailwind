@@ -1,0 +1,27 @@
+{
+  "name": "css_tailwind",
+  "version": "1.0.0",
+  "description": "project_yailwindCss-init",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "postcss ./src/tailwind.css -o ./public/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Christiano0407/css_Tailwind.git"
+  },
+  "keywords": [
+    "tailwindCss"
+  ],
+  "author": "chris04",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Christiano0407/css_Tailwind/issues"
+  },
+  "homepage": "https://github.com/Christiano0407/css_Tailwind#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.20",
+    "tailwindcss": "^3.2.4"
+  }
+}
