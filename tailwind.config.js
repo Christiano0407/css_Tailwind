@@ -8,13 +8,14 @@ module.exports = {
     extend: {},
     colors: {
       transparent: 'transparent',
-      red: colors.rose,
-      yellow: colors.amber,
-      blue: {
-        light: '#85d7ff',
-        DEFAULT: '#1fb6ff',
-        dark: '#009eeb',
-      },
+      bluePlus: `#61AEC0`,
+      greenPlus: `#8FA206`,
+      redPlus: `#CC2D4A`,
+      white: `#FFFFFF`,
+      black: `#000000`,
+    },
+    fontFamily: {
+      sans: ['Poppins', `sans-serif`],
     },
     screens: {
       sm: '320px',
@@ -35,5 +36,12 @@ module.exports = {
       // => @media (min-width: 1280px) { ... }
     },
   },
-  plugins: [],
+  corePlugins: {
+    aspectRatio: false,
+  },
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+  ],
 };
