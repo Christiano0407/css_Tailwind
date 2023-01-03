@@ -41,6 +41,7 @@
                   stroke-width="1.5"
                   stroke="currentColor"
                   aria-hidden="true"
+                  id="idSvgPlus"
                 >
                   <path
                     stroke-linecap="round"
@@ -58,6 +59,7 @@
                   stroke-width="1.5"
                   stroke="currentColor"
                   aria-hidden="true"
+                  id="idSvg"
                 >
                   <path
                     stroke-linecap="round"
@@ -166,7 +168,7 @@
               To: "transform opacity-0 scale-95"
           -->
                 <div
-                  class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-black ring-1 ring-opacity-5 focus:outline-none"
+                  class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-black ring-1 ring-opacity-5 focus:outline-none hidden"
                   role="menu"
                   aria-orientation="vertical"
                   aria-labelledby="user-menu-button"
@@ -205,7 +207,7 @@
         </div>
 
         <!-- Mobile menu, show/hide based on menu state. -->
-        <div class="sm:hidden" id="idMobileMenu">
+        <div class="sm:hidden hidden" id="idMenuMobile">
           <div class="space-y-1 px-2 pb-3">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             <a
