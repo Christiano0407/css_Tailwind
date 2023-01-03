@@ -17,6 +17,12 @@ module.exports = {
     fontFamily: {
       sans: ['Poppins', `sans-serif`],
     },
+    fontSize: {
+      sm: ['12px', '14px'],
+      base: ['16px', '24px'],
+      lg: ['20px', '28px'],
+      xl: ['24px', '32px'],
+    },
     screens: {
       sm: '320px',
       // => @media (min-width: 640px) { ... }
