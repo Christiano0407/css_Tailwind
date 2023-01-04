@@ -45,9 +45,13 @@ module.exports = {
       xl: ['24px', '32px'],
     },
     screens: {
-      sm: '640px',
+      nax1: { max: '320px' },
+
+      max2: { max: '639px' },
+
+      sm: { min: '640px' },
       // => @media (min-width: 640px) { ... } / 320px
-      md: '768px',
+      md: { min: '768px' },
       // => @media (min-width: 768px) { ... }
       lg: '1024px',
       // => @media (min-width: 1024px) { ... }
