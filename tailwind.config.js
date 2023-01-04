@@ -45,7 +45,7 @@ module.exports = {
       xl: ['24px', '32px'],
     },
     screens: {
-      nax1: { max: '320px' },
+      max1: { max: '320px' },
 
       max2: { max: '639px' },
 
