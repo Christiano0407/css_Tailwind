@@ -7,6 +7,7 @@ const user = document.querySelector(`#user-menu-button`);
 const dropdownNotification = document.querySelector(`#idDropdownPlus`);
 const svgPlus = document.querySelector(`#idSvgPlus`);
 const svg = document.querySelector(`#idSvg`);
+const btnMoon = document.querySelector(`#idBtnMoon`);
 
 //** === Events === */
 
