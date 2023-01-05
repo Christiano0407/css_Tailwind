@@ -10,7 +10,9 @@ const svg = document.querySelector(`#idSvg`);
 const btnMoon = document.querySelector(`#idBtnMoon`);
 
 //** === Events === */
+// === Dark Mode ===
 
+// === Click
 user.addEventListener(`click`, () => {
   //console.log('Click');
   if (dropdownNotification.classList.contains(`hidden`)) {

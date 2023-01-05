@@ -6,6 +6,10 @@ module.exports = {
   darkMode: ['class', '[data-mode="dark"]'],
   theme: {
     extend: {
+      aspectRatio: {
+        '4/3': '4 / 3',
+        '16/9': '16 / 9',
+      },
       backgroundImage: {
         'desktop-one': "url('/src/img/desktop/img1-desktop.jpg')",
         'desktop-two': "url('/src/img/desktop/img2-desktop.jpg')",
@@ -53,7 +57,7 @@ module.exports = {
       // => @media (min-width: 640px) { ... } / 320px
       md: { min: '768px' },
       // => @media (min-width: 768px) { ... }
-      lg: '1024px',
+      lg: { min: '1024px' },
       // => @media (min-width: 1024px) { ... }
       xl: '1280px',
       // => @media (min-width: 1280px) { ... }
@@ -63,7 +67,7 @@ module.exports = {
       // => @media (min-width: 640px) { ... }
       laptop: '1024px',
       // => @media (min-width: 1024px) { ... }
-      desktop: '1280px',
+      desktop: { min: '1280px' },
       // => @media (min-width: 1280px) { ... }
     },
   },
