@@ -3,7 +3,7 @@ const colors = require('tailwindcss/colors');
 
 module.exports = {
   purge: ['./public/index.html', './src/**/*.{html,js,jsx,ts,tsx}'],
-  darkMode: ['class', '[data-mode="dark"]'],
+  darkMode: ['dark', '[data-mode="dark"]'],
   theme: {
     extend: {
       aspectRatio: {
@@ -38,6 +38,7 @@ module.exports = {
       third: `#61AEC0`,
       white: `#FFFFFF`,
       black: `#000000`,
+      darkPlus: `#333333`,
     },
     fontFamily: {
       sans: ['Poppins', `sans-serif`],
@@ -49,8 +50,9 @@ module.exports = {
       xl: ['24px', '32px'],
     },
     screens: {
+      // => @media (max-width: 320px) { ... } / 320px
       max1: { max: '320px' },
-
+      // => @media (max-width: 639px) { ... } / 320px
       max2: { max: '639px' },
 
       sm: { min: '640px' },
@@ -59,13 +61,13 @@ module.exports = {
       // => @media (min-width: 768px) { ... }
       lg: { min: '1024px' },
       // => @media (min-width: 1024px) { ... }
-      xl: '1280px',
+      xl: { min: '1280px' },
       // => @media (min-width: 1280px) { ... }
-      '2xl': '1536px',
+      '2xl': { min: '1536px' },
       // => @media (min-width: 1536px) { ... }
-      tablet: '640px',
+      tablet: { min: '640px' },
       // => @media (min-width: 640px) { ... }
-      laptop: '1024px',
+      laptop: { min: '1024px' },
       // => @media (min-width: 1024px) { ... }
       desktop: { min: '1280px' },
       // => @media (min-width: 1280px) { ... }

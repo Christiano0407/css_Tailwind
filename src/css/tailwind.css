@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* === CSS Style => @Layer and @apply === */
+@layer components {
+  .dark {
+    background-color: #333333;
+    color: #f2f2f2;
+  }
+  .light {
+    background-color: #f2f2f2;
+    color: #333333;
+  }
+
+  .visible {
+    visibility: visible;
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
+}

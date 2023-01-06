@@ -37,3 +37,7 @@ btnMobileMenu.addEventListener(`click`, () => {
     svg.classList.toggle(`hidden`);
   }
 });
+
+btnMoon.addEventListener(`click`, () => {
+  console.log('Dark');
+});
