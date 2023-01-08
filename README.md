@@ -76,13 +76,21 @@ Las directivas se diferencian por un @ al inicio, también se tienen las funcion
 
 [vite](https://vitejs.dev/)
 
-## Media Queries Mobile  Screen Desktop
+## Media Queries: Mobile && Tablet && Screen Desktop
+
+> Media Querie: Mobile
 
 ![](/src/img/screenShot/mobile_white.png)
 
+> Dark Mode: Mobile
+
 ![](/src/img/screenShot/mobile_dark.png)
 
+> Media Queri: Tablet
+
 ![](/src/img/screenShot/tablet_white.png)
+
+> Media Querie: Screen Desktop
 
 ![](/src/img/screenShot/screen_lg.png)
 
