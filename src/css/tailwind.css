@@ -5,12 +5,12 @@
 /* === CSS Style => @Layer and @apply === */
 @layer components {
   .dark {
-    background-color: #333333;
+    background-color: #111111;
     color: #f2f2f2;
   }
   .light {
     background-color: #f2f2f2;
-    color: #333333;
+    color: #111111;
   }
 
   .visible {
@@ -19,5 +19,12 @@
 
   .hidden {
     visibility: hidden;
+  }
+
+  @media (prefers-color-scheme: darkMode) {
+    body {
+      background: #111111;
+      color: #f2f2f2f2;
+    }
   }
 }

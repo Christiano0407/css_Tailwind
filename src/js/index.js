@@ -1,4 +1,5 @@
 //**TODO ==== === ===  Javascript With Tailwind CSS === === ===== */
+//const { darkMode } = require('../../tailwind.config');
 //** === Variables === */
 const btnMobileMenu = document.querySelector(`#idMobileMenu`);
 const menuMobile = document.querySelector(`#idMenuMobile`);
@@ -8,6 +9,7 @@ const dropdownNotification = document.querySelector(`#idDropdownPlus`);
 const svgPlus = document.querySelector(`#idSvgPlus`);
 const svg = document.querySelector(`#idSvg`);
 const btnMoon = document.querySelector(`#idBtnMoon`);
+const header = document.querySelector(`idHeader`);
 
 //** === Events === */
 // === Dark Mode ===
@@ -37,7 +39,14 @@ btnMobileMenu.addEventListener(`click`, () => {
     svg.classList.toggle(`hidden`);
   }
 });
-
+//**TODO ===  Dark ===  */
 btnMoon.addEventListener(`click`, () => {
-  console.log('Dark');
+  console.log('Moon');
+
+  if (btnMoon) {
+    document.body.classList.toggle('dark');
+    header.classList.toggle(`dark`);
+  }
 });
+//document.documentElement.classList.add('dark');
+//document.documentElement.classList.remove('dark');

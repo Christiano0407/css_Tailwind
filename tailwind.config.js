@@ -3,7 +3,7 @@ const colors = require('tailwindcss/colors');
 
 module.exports = {
   purge: ['./public/index.html', './src/**/*.{html,js,jsx,ts,tsx}'],
-  darkMode: ['dark', '[data-mode="dark"]'],
+  darkMode: `class`,
   theme: {
     extend: {
       aspectRatio: {
@@ -38,6 +38,7 @@ module.exports = {
       third: `#61AEC0`,
       white: `#FFFFFF`,
       black: `#000000`,
+      darkOne: `#111111`,
       darkPlus: `#333333`,
     },
     fontFamily: {
