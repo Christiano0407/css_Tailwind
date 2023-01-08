@@ -1429,10 +1429,6 @@ select {
     margin-left: 1.5rem;
   }
 
-  .sm\:block {
-    display: block;
-  }
-
   .sm\:hidden {
     display: none;
   }
@@ -1545,21 +1541,13 @@ select {
 }
 
 @media (min-width: 1024px) {
-  .lg\:block {
-    display: block;
-  }
-
-  .lg\:hidden {
-    display: none;
+  .lg\:flex {
+    display: flex;
   }
 
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
-  }
-
-  .lg\:hidden {
-    visibility: hidden;
   }
 }
 
